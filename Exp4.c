@@ -1,14 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int a=15;
-    float f=3.14159;
-    double d=2.718281828;
-    char ch='A';
-    printf("Integer (%%d): %d\n", a);
-    printf("Float (%%f): %f\n", f);
-    printf("Double (%%lf): %lf\n", d);
-    printf("Character (%%c): %c\n", ch);
- return 0;
+    int a,b;
+    printf("Enter any two numbers:");
+    scanf("%d%d",&a,&b);
+     if (a > b) {
+        printf("%d is the largest\n", a);
+    } else if (b > a) {
+        printf("%d is the largest\n", b);
+    } else {
+        printf("Both numbers are equal\n");
+    }
 
+    return 0;
 }
